@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>		
+	</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <script src="contactform.js"></script> 
+</head>
+<body>
+	<div id="contactform">
+  <h1>Get in Touch!</h1>
+  <h4><em>Please fill out below form to get in touch with us!</em></h4>
+  <form onsubmit="return false" id="contactform">
+  	<label for="gender">Choose Your Gender-*</label><br>
+  	<select id="gender" name="gender" autofocus="autofocus" required="required">
+  		<option disabled selected value>Select</option>
+  		<option value="Male">Male</option>
+  		<option value="Female">Female</option>
+  		<option value="Other">Can't Say</option>  		
+  	</select> <br><br>
+
+  	<label for="fname">Enter Your First Name:-*</label><br>
+  	<input type="text" id="fname" name="fname" placeholder="First Name" required="required"/ ><br><br>
+  	<label for="lname"> Enter Your Last Name:-*</label><br>
+  	<input type="text" id="lname" name="lname" placeholder="Last Name" required="required"/><br><br>
+  	<label for="mail">E-mail Address:-*</label><br>
+  	<input type="email" id="mail" name="mail" placeholder="E-mail" required="required"/><br><br>
+  	<label for="password">Password:-*</label><br>
+  	<input type="password" id="password" name="password" placeholder="Password" required="required"/><br><br>
+  	<label for="address"> Address:-</label><br>
+  	<input type="text" id="address" name="address" placeholder="Address" onkeypress="this.style.minWidth = ((this.value.length + 1) * 7) + 'px';" /><br><br>
+  	<label for="number">Mobile No:-*</label><br>
+  	<input type="tel" id="number" name="number" placeholder="Enter your contact number" pattern="[0-9]{10}" required="required"/><br><br>
+  	<label for="message">Message:-*</label><br>
+  	<textarea id="message" name="message" placeholder="Leave your message here....." required="required" rows="10" column="100"></textarea>
+    <p id="required"><em>*Required Fields</em></p>
+  	
+  	<input type="submit" id="submit" onclick="check()"/>
+
+  </form>
+</div>
+</body>
+</html>
